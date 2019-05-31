@@ -18,8 +18,8 @@ html,body {
 #header {
     width: 100%;
     position: relative;
-    /* display: block; */
     top: 0;
+    height: 430px;
 }
 
 #header-img-wrapper {
@@ -28,6 +28,7 @@ html,body {
 }
 #headImg {
     width: 100%;
+    max-height: 50vh;
 }
 /* Navigationsmenyn */
 #navbar {
@@ -65,19 +66,22 @@ html,body {
 
 /* Introduktionen högst upp */
 #intro-box {
-    width: 78%;
-    position: relative;
-    padding: 7.5%;
+    width: 70%;
+    max-width: 550px;
+    position: absolute;
+    padding: 30px;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
     line-height: 150%;
     color: rgb(136, 136, 136); 
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 0 0 1px 1px rgb(211, 211, 211);
     background: white;
-    margin: -70px auto 0 auto;
-    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150px;
 }
 #intro-box h3 {
     font-size: 22px;
@@ -92,6 +96,8 @@ html,body {
 /* Skills tabben som finns tidigt på sidan */
 #skills-wrapper {
     width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 #skills-head {
@@ -108,6 +114,7 @@ html,body {
     background: #fb8604;
 }
 
+/* Lista med saker i skills tabben */
 .skills-list-wrapper {
     margin: auto;
 }
@@ -140,6 +147,9 @@ html,body {
     margin-top: 40px;
 }
 
+
+
+
 /* Projekt */
 
 #projects-wrapper {
@@ -147,8 +157,8 @@ html,body {
 }
 .project-section {
     width: 84%;
-    padding: 0 8%;
-    min-height: 450px;
+    padding: 30px 8%;
+    min-height: 400px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -156,15 +166,21 @@ html,body {
 }
 
 #project-header {
-    
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
 }
-
+#project-text{
+    max-width: 600px;
+    margin: auto;
+}
 .project-img {
-    width: 70%;
+    width: 100%;
+    max-width: 500px;
     object-fit: cover;
     margin: auto;
-    padding: 30px 0;
     display: block;
+    border-radius: 3px;
 }
 #section-one {
     background: linear-gradient(rgb(251, 134, 4), rgb(251, 66, 4));
@@ -208,4 +224,36 @@ html,body {
     background-image: url("images/phone.jpg");
     margin: 0 -25px;
     position: absolute;
+}
+@media screen and (max-width: 300px) {
+    .skills-list-wrapper ul {
+        display: block;
+    }
+    #intro-box {
+        padding: 10px;
+        width: calc(70% + 40px);
+    }
+    #footer p {
+        font-size: 0.7em;
+    }
+    #footer #mail:before {
+        font-size: 15px;
+        vertical-align: middle;
+        color: #fb8604;
+        position: absolute;
+        content:"@";
+        margin: 0 -25px;
+        display: none;
+    }
+    #footer #phone:before {
+        width: 18px;
+        height: 18px;
+        content:"";
+        background-size: cover;
+        background-image: url("images/phone.jpg");
+        margin: 0 -25px;
+        position: absolute;
+        display: none;
+    }
+
 }
