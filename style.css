@@ -198,6 +198,9 @@ html,body {
     display: block;
     border-radius: 3px;
 }
+.project-img:hover {
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+}
 #section-one {
     background: linear-gradient(rgb(251, 134, 4), rgb(251, 66, 4));
 }
