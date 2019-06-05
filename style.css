@@ -169,9 +169,8 @@ html,body {
 #projects-head {
     text-align: center;
     font-size: 22px;
-    padding-top: 20px;
+    padding-top: 40px;
     font-weight: bold;
-    margin-top: 50px;
 }
 #projects-head-underline {
     width: 70px;
@@ -179,7 +178,7 @@ html,body {
     margin: auto;
     /* position: absolute; */
     background: #fb8604;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .project-header {
