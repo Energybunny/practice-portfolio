@@ -162,8 +162,8 @@ html,body {
     min-height: 400px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
     text-align: center;
+    font-size: 0;
 }
 
 #projects-head {
@@ -182,14 +182,15 @@ html,body {
     margin-bottom: 60px;
 }
 
-#project-header {
+.project-header {
     max-width: 600px;
     padding: 20px;
     margin: auto;
 }
-#project-text{
+.project-text{
     max-width: 600px;
     margin: auto;
+    font-size: 18px;
 }
 .project-img {
     width: 100%;
@@ -202,6 +203,7 @@ html,body {
 .project-img:hover {
     box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
 }
+
 #section-one {
     background: linear-gradient(rgb(251, 134, 4), rgb(251, 66, 4));
 }
@@ -211,9 +213,7 @@ html,body {
 #section-three {
     background: linear-gradient(rgb(253, 104, 104), rgb(255, 102, 209));
 }
-#section-four {
-    background: linear-gradient(rgb(251, 4, 4), rgb(253, 159, 159));
-}
+
 
 
 #footer {
@@ -276,4 +276,37 @@ html,body {
         display: none;
     }
 
+}
+
+@media screen and (min-width: 1100px){
+    .project-section {
+        display: flex; 
+        align-items: center;
+    }
+    .project-text {
+        width: 400px;
+        margin: 0;
+        padding: 20px;
+        display: inline-block;
+        text-align: left;
+        /* vertical-align: middle; */
+    }
+    .project-img {
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        display: inline-block;
+    }
+    .project-header {
+        text-align: left;
+        margin: 0;
+        padding: 15px 0;
+
+    }
+    .project-content-wrapper {
+        margin: auto;
+        min-width: 500px;
+        display: flex; 
+        align-items: center;
+    }   
 }
