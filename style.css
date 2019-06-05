@@ -98,6 +98,7 @@ html,body {
     width: 100%;
     max-width: 800px;
     margin: auto;
+    margin-top:10px;
 }
 
 #skills-head {
@@ -193,15 +194,12 @@ html,body {
 .project-img {
     width: 100%;
     max-width: 500px;
+    object-fit: cover;
     margin: auto;
     display: block;
-}
-.project-img img{
-    width: 100%;
     border-radius: 3px;
-    object-fit: cover;
 }
-.project-img img:hover {
+.project-img:hover {
     box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
 }
 #section-one {
@@ -236,7 +234,7 @@ html,body {
     color: #fb8604;
     position: absolute;
     content:"@";
-    margin: 0 -25px;
+    margin: 0 -20px;
 }
 #footer #phone:before {
     width: 18px;
@@ -247,7 +245,7 @@ html,body {
     margin: 0 -25px;
     position: absolute;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
     .skills-list-wrapper ul {
         display: block;
     }
